@@ -1,0 +1,21 @@
+nav {
+    background-color: #E5E8E8;
+    height: 55px;
+}
+#menu{
+    list-style-type:none;
+    display:inline-flex;
+    float:right;
+    font-size: 20px;
+}
+#menu li{
+    margin-right:30px;
+}
+#menu li a{text-decoration:none;}
+#banner{
+    margin-top:5px;
+    background-image: url('vacation.jpg');
+    height: 400px;
+    width:100%;
+    background-position:center;
+}
