@@ -6,16 +6,13 @@
 div {
     background-color: #FFEB33;
     color: black;
-    font-display:fallback;
     font-size: 25px;
-    margin: 35px 35px 35px 35px;
     border: 2px solid #E2CC00;
     border-radius: 5px 5px 5px 5px;
-    box-shadow: 10px 5px 10px #C1AF02;
     padding: 15px 15px 15px 15px;
 }
 #i1 {
-    margin: 35px 35px 35px 35px;
+    margin: 3px 35px 35px 35px;
 }
 #p2{
     background-color:burlywood;

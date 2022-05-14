@@ -1,0 +1,8 @@
+
+#menu {
+    list-style-type:none; display:inline-flex; margin-right:45px;
+}
+#menu li { margin-right:45px;}
+#menu li a {
+        text-decoration: none;
+    }
