@@ -1,0 +1,14 @@
+#p1{
+    background-color:aliceblue;
+    font-size:25px;
+}
+div{
+    background-color: azure;
+    color: aquamarine;
+}
+#p2{
+    background-color:burlywood;
+}
+.center-alignement{
+    text-align:center;
+}
