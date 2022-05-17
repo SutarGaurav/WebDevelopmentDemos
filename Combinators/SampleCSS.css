@@ -1,0 +1,13 @@
+#p1{
+    font-family:Cambria;
+    margin: 25px;
+    font-size: 18px;
+    font-style:normal;
+    font-weight:200;
+    text-align:justify;
+}
+img {
+    float: right;
+    height: 50%;
+    width: 35%;
+}
