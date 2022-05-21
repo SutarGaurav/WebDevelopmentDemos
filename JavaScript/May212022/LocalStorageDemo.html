@@ -1,0 +1,32 @@
+<html>
+<head>
+
+</head>
+<body>
+    <p>
+        Enter your name: <input type="text" id="t1" />
+    </p>
+    <p>
+        Enter your password: <input type="text" id="t2" />
+    </p>
+    <p>
+        <input type="button" value="save" onclick="save()" />
+    </p>
+
+    <script>
+        function save() {
+            var name = document.getElementById("t1").value;
+
+            if (localStorage) {
+                localStorage.setItem("username", name);
+                localStorage.setItem("password", password);
+                alert("Success!");
+            }
+            else {
+                console.log('Does not support');
+            }
+        }
+    </script>
+
+</body>
+</html>
