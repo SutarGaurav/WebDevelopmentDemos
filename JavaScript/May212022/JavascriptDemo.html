@@ -1,0 +1,63 @@
+<html>
+<head>
+
+</head>
+<body>
+    <script>
+        var x = 10;
+        let y = 100;
+        const z = 1000;
+        console.log(x);
+        console.log(y);
+        console.log(z);
+        function test1() {
+            var x = 20;
+            console.log("inside test 1 var x"+" "+x);
+            let y = 200;
+            console.log("inside test 1 let y" + " " + y);
+            //let x = 30;//yane error dila. says x is already declared.
+           // console.log("inside test 1" + " " + x);
+            const z = 2000;
+            console.log("inside test 1 const z" + " " +z);
+        }
+        test1();
+        console.log("outside the functions now" + " " + x + " " + y + " " + z);
+        {
+            var x = 40;
+            console.log("at block scope"+" "+x)
+            const z = 3000;
+
+        }
+        /*______________________________________________________________*/
+        console.log("______________________________");
+        var string = "Hello! Guten Morgan! Guten";
+        { let r1 = string.slice(0, 10); console.log(r1); }
+        { let r1 = string.slice(3); console.log(r1); }
+        { let r2 = string.replace("Guten", "Good"); console.log(r2);}
+        { let r2 = string.replace(/Guten/g, "Good"); console.log(r2); }
+        { let r2 = string.replace(/Guten/g, ""); console.log(r2); }
+        { console.log(string.toLowerCase()); }
+        { console.log(string.toUpperCase()); }
+        { console.log(string.length); }
+
+
+        var r3 = string.substring(0, 10);
+        console.log(r3);
+        var r4=string.substring(3);
+        console.log(r4);
+
+        console.log(string.indexOf('H'));
+        console.log(string.lastIndexOf('a'));
+        console.log(string.trim());
+
+        var num1 = 5.12345;
+        var str = num1.toString();
+        console.log(str);
+        console.log(num1.toFixed(2));
+        console.log(num1.toFixed(4));
+        console.log(num1.toFixed(6));
+
+
+    </script>
+</body>
+</html>

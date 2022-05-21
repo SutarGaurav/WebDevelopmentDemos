@@ -1,0 +1,29 @@
+<html>
+<head></head>
+<body>
+    <div id="d1"></div>
+
+    <script>
+        var n = [56,23,78,11,99];
+
+        n.push(51);
+        n.unshift(94);
+        n.pop();
+        n.shift();
+        var ncopy = n.slice(3);
+        n.splice(2, 0, 94);
+        n.sort();
+        n.reverse();
+
+
+        var data = "<ul>";
+        for (let i = 0; i < n.length; i++) {
+            data += "<li>" + n[i] + "</li>";
+        }
+        data += "</ul>";
+        console.log(data);
+        document.getElementById("d1").innerHTML = data;
+
+    </script>
+</body>
+</html>

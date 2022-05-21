@@ -1,0 +1,89 @@
+<html>
+<head>
+    <style>
+        #d1 ol{
+            
+        }
+        #d2 ul{
+            
+        }
+        #d3 ul{
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div>
+
+    <script>
+
+        /*var array = ["Menu", "Home", "About us", "Contact"];
+        var data = "<ol>";
+        for (let i = 0; i < array.length; i++) {
+            data += "<li>" + array[i] + "</li>";
+        }
+        data += "</ol>";
+        console.log(data);
+        document.getElementById("d1").innerHTML = data;*/
+
+
+
+        /*var city = ["Pune", "Mumbai", "Nashik", "Nagpur"];
+        var data = "<ul>";
+        for (let i = 0; i < city.length; i++) {
+            data += "<li>" + city[i] + "</li>";
+        }
+        data += "</ul>";
+        console.log(data);
+        document.getElementById("d2").innerHTML = data;*/
+
+
+
+       /* var color = ["Red", "Blue", "Green"];
+        function AddLast() { color.push(document.getElementById("t1").value); Update(); } //adds element at last position
+        function Addfirst() { color.unshift(document.getElementById("t1").value); Update(); } //adds element at first position
+        function RemoveLast() { color.pop(); Update(); }
+        function RemoveFirst() { color.shift(); Update(); }
+        function Update() {
+            var data = "<ul>";
+            for (let i = 0; i < color.length; i++) {
+                data += "<li>" + color[i] + "</li>";
+            }
+            data += "</ul>";
+            console.log(data);
+            document.getElementById("d3").innerHTML = data;
+        }*/
+
+
+
+        var colors = ["red", "blue", "green", "black"];
+        //const colorcopy = colors.splice(2, 0, "Cyan");
+        const colorcopy = colors.slice(1, 3);
+        colors.sort();
+        colors.reverse();
+        var data = "<ul>";
+        for (let i = 0; i < colors.length; i++) {
+            data += "<li>" + colors[i] + "</li>";
+        }
+        data += "</ul>";
+        console.log(data);
+        document.getElementById("d4").innerHTML = data;
+
+
+    </script>
+<!--    <p>
+        Enter Color: <input type="text" id="t1" />
+    </p>
+    <p>
+        <input type="button" value="Add at last" onclick="AddLast()" />
+        <input type="button" value="Add at first" onclick="Addfirst()" />
+        <input type="button" value="Remove last element" onclick="RemoveLast()" />
+        <input type="button" value="Remove first element" onclick="RemoveFirst()" />
+
+    </p>
+-->
+</body>
+</html>
