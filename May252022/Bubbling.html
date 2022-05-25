@@ -1,0 +1,27 @@
+<html>
+<head>
+</head>
+<body>
+    <div id="grand-grandparent">
+        <button type="button">GrandGrandParent</button>
+        <div id="grandparent">
+            <button type="button">GrandParent</button>
+            <div id="parent">
+                <button type="button">Parent</button>
+                <div id="child">
+                    <button type="button">Get Emps</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("grand-grandparent").addEventListener("click", function () { alert("inside GrandGrandParent"); }, false);
+        document.getElementById("grandparent").addEventListener("click", function () { alert("inside GrandParent"); }, false);
+        document.getElementById("parent").addEventListener("click", function () { alert("inside Parent"); }, true);
+        document.getElementById("child").addEventListener("click", function () { alert("inside child"); }, false);
+
+    </script>
+    <!--External Bootstrap links-->
+
+</body>
+</html>
