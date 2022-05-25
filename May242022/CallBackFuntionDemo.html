@@ -1,0 +1,33 @@
+<html>
+<head>
+
+</head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <script>
+        function add1(a, b) {
+            let sum = a + b;
+            display1(sum);
+        }
+        function display1(sum) {
+            document.getElementById("d1").innerHTML = sum;
+        }
+
+        add1(5, 2);
+
+        //callback
+        function add2(a, b, mycallback) {
+            let sum = a + b;
+            mycallback(sum);
+        }
+        function display2(sum) {
+            document.getElementById("d2").innerHTML = sum;
+        }
+
+        add2(80, 50, display2);
+
+
+    </script>
+</body>
+</html>

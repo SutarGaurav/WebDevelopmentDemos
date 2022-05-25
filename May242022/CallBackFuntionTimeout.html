@@ -1,0 +1,52 @@
+<html>
+<head>
+
+</head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <script>
+        setTimeout(function () {
+            document.getElementById("d1").innerHTML = "Hello";
+        }, 5000);
+
+        function showtime() {
+            let d = new Date();
+            let result = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds() + ":" + d.getMilliseconds();
+            document.getElementById("d2").innerHTML = result;
+        }
+
+        setInterval(showtime, 1);
+        /*-------------------------------------------------------------------------------------------------------*/
+
+        var array = ["red", "blue", "green"];
+
+        var data = "<ul>";
+        for (let i = 0; i < array.length; i++) {
+            data += "<li>" + array[i] + "</li>";
+        }
+        data += "</ul>";
+
+        function display(data) {
+            document.getElementById("d3").innerHTML = data;
+        }
+        var promise = new Promise(function (resolve, reject) {
+            
+            if (array!=null) {
+                resolve(data);
+            }
+            else {
+                reject("error");
+
+            }
+        }
+        );
+
+        promise.then(function (value) {display(value);}, function (error)
+        {
+            display(error);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+
+<html>
+<head>
+
+</head>
+<body>
+    <div id="d1"></div>
+    <script>
+        const employee = {
+            firstname: "user1",
+            lastname: "User",
+            age: 30,
+            fullname: function() {
+                return this.firstname + " " + this.lastname;
+            },
+            fullname1: function (city, country) {
+                return this.firstname + " " + this.lastname+" "+city+" "+country;
+            }
+        }
+        const member = {
+            firstname: "user2",
+            lastname: "user3"
+        }
+        var arr = ["Torento", "Canada"];
+
+        let empinfo = employee.fullname.bind(member);
+        document.getElementById("d1").innerHTML = employee.fullname;
+        document.getElementById("d1").innerHTML = employee.fullname.call(member);
+        document.getElementById("d1").innerHTML = employee.fullname1.call(member, "Pune", "India");
+        document.getElementById("d1").innerHTML = employee.fullname1.apply(member, ["Nashik", "India"]);
+        document.getElementById("d1").innerHTML = employee.fullname1.apply(member, arr);
+        document.getElementById("d1").innerHTML = empinfo();
+       
+    </script>
+    
+
+</body>
+</html>

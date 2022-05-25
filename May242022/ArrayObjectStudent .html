@@ -1,0 +1,42 @@
+<html>
+<head>
+
+</head>
+<body>
+    <div id="d1"></div>
+
+    <script>
+        const student = [
+            {
+                name: "A",
+                sname: "a",
+                stream: "Producction",
+                percentage:"89.25",
+                city:"Pune"
+            },
+            {
+                name: "B",
+                sname: "b",
+                stream: "IT",
+                percentage: "89.25",
+                city: "Nashik"
+            },
+            {
+                name: "C",
+                sname: "c",
+                stream: "Mechanical",
+                percentage: "89.25",
+                city: "Jalgaon"
+            }
+        ]
+        var data = "<table border='1'><tr><th>First Name</th><th>Last Name</th><th>Stream</th><th>Percentage</th><th>City</th></tr>";
+        for (let i = 0; i < student.length; i++) {
+            data += "<tr><td>" + student[i].name + "</td><td>" + student[i].sname + "</td><td>" + student[i].stream + "</td><td>" + student[i].percentage + "</td><td>" + student[i].city + "</td></tr>";
+        }
+        data += "</table>";
+        document.getElementById("d1").innerHTML = data;
+    </script>
+
+
+</body>
+</html>
